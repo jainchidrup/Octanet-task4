@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning App</title>
+    <link rel="stylesheet" href="language-styles.css">
+</head>
+<body>
+    <div class="language-container">
+        <h1>Language Learning App</h1>
+        <button onclick="startLesson()">Start Lesson</button>
+        <div id="lessonArea">
+            <p id="lessonText">Welcome to the Language Learning App! Click 'Start Lesson' to begin.</p>
+            <button id="quizButton" onclick="showQuiz()" style="display:none;">Take Quiz</button>
+        </div>
+        <div id="quizArea" style="display:none;">
+            <h2>Quiz</h2>
+            <p id="question">Translate "Hello" to Spanish.</p>
+            <input type="text" id="answer" placeholder="Your Answer">
+            <button onclick="checkAnswer()">Submit</button>
+            <p id="feedback"></p>
+        </div>
+    </div>
+    <script src="language-script.js"></script>
+</body>
+</html>
